@@ -122,9 +122,9 @@ async def event_receiver(
 async def judge(message: str) -> str:
     if message.startswith("start"):
         return "已开启" if await minecraft.servers[message[6:]].start_server() else "启动失败"
-    elif message == "stop":
+    elif message.startswith("stop"):
         return "已关闭" if await minecraft.servers[message[5:]].stop_server() else "关闭失败"
-    elif message == "status":
+    elif message.startswith("status"):
         return "该服务器开启状态为:" + str(minecraft.servers[message[5:]].status)
     elif message.startswith("say"):
         command_list = message[5:].split()
