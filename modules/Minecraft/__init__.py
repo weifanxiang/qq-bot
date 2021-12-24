@@ -24,7 +24,7 @@ class Minecraft:
         lock_file: Path
 
         def __init__(self, **kwargs):
-            self.path = kwargs["path"]
+            self.path = Path(kwargs["path"])
             self.name = kwargs["name"]
             self.lock_file = self.path / "session.lock"
 
@@ -95,7 +95,7 @@ class Minecraft:
     servers: Dict[str, Server]
 
     def __init__(self, config: dict = {"mc_dir": "~/minecraft/"}):
-        self.server_dir = Path(config["mc_dir"])
+        self.servers_dir = Path(config["mc_dir"])
         for i in self.servers_dir.iterdir():
             self.servers.update(
                 {i.name: self.Server(kwargs={"name": i.name, "path": i})}
