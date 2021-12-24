@@ -92,7 +92,7 @@ class Minecraft:
                 pass
 
     servers_dir: Path
-    servers: Dict[str, Server]
+    servers: Dict[str, Server] = {}
 
     def __init__(self, config: dict = {"mc_dir": "/opt/minecraft/"}):
         self.servers_dir = Path(config["mc_dir"])
