@@ -125,9 +125,9 @@ async def judge(message: str) -> str:
     elif message.startswith("stop"):
         return "已关闭" if await minecraft.servers[message[5:]].stop_server() else "关闭失败"
     elif message.startswith("status"):
-        return "该服务器开启状态为:" + str(minecraft.servers[message[5:]].status)
+        return "该服务器开启状态为:" + str(minecraft.servers[message[7:]].status)
     elif message.startswith("say"):
-        command_list = message[5:].split()
+        command_list = message[4:].split()
         return (
             "已发送"
             if await minecraft.servers[command_list[0]].send_message(command_list[1])
