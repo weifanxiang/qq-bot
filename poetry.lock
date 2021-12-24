@@ -211,6 +211,23 @@ url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
 reference = "tsinghua"
 
 [[package]]
+name = "graia-saya"
+version = "0.0.13"
+description = ""
+category = "main"
+optional = false
+python-versions = ">=3.7,<4.0"
+
+[package.dependencies]
+graia-broadcast = ">=0.12.1"
+loguru = ">=0.5.3,<0.6.0"
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
+reference = "tsinghua"
+
+[[package]]
 name = "idna"
 version = "3.3"
 description = "Internationalized Domain Names in Applications (IDNA)"
@@ -422,7 +439,7 @@ reference = "tsinghua"
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.9,<4.0"
-content-hash = "2600117a3b1b7fdd09377295af6698396f5d73fc305806f6eb08770482445a0d"
+content-hash = "6719e78674232e92cd01b20fffdb3027a3aba71e131077a79a0067674d3eea52"
 
 [metadata.files]
 aiohttp = [
@@ -612,6 +629,10 @@ graia-ariadne = [
 graia-broadcast = [
     {file = "graia-broadcast-0.14.4.tar.gz", hash = "sha256:0b7f84d0105e51c862001f966d98e55682debc6aba8030929303bde4e9204e59"},
     {file = "graia_broadcast-0.14.4-py3-none-any.whl", hash = "sha256:2b04f9f6ac442a4522ef553496b47a9e02761ee00e67e3bf2336fbcf542bd9ec"},
+]
+graia-saya = [
+    {file = "graia-saya-0.0.13.tar.gz", hash = "sha256:07b4fe4c5e9b82212b63207e6264f5fa296375bdebeb6e972f50eb5825d52547"},
+    {file = "graia_saya-0.0.13-py3-none-any.whl", hash = "sha256:9ffcef9b5ed17c1032d77e199b9718c05b41b76c12888a368a0d234b0771b91c"},
 ]
 idna = [
     {file = "idna-3.3-py3-none-any.whl", hash = "sha256:84d9dd047ffa80596e0f246e2eab0b391788b0503584e8945f2368256d2735ff"},

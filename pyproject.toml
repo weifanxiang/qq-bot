@@ -8,6 +8,7 @@ authors = ["nullptr <wfx.weifanxiang@gmail.com>"]
 python = ">=3.9,<4.0"
 requests = "^2.26.0"
 graia-ariadne = "^0.4.9"
+graia-saya = "^0.0.13"
 
 [tool.poetry.dev-dependencies]
 black = {version = "^21.9b0", allow-prereleases = true}
