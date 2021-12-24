@@ -26,7 +26,7 @@ app = Ariadne(
 
 
 with saya.module_context():
-    saya.require("modules.minecraft")
+    saya.require("modules.Minecraft")
 
 # @bcc.receiver("FriendMessage")
 # async def friend_message_listener(app: Ariadne, friend: Friend):
