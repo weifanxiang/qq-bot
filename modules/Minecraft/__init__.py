@@ -78,8 +78,8 @@ class Minecraft:
                 return True
 
         @property
-        def status(self) -> object:
-            return self.lock_file.exists
+        def status(self) -> bool:
+            return bool(self.lock_file.exists)
 
         class Config:
             start_sh: Path = Path("./start.sh")
