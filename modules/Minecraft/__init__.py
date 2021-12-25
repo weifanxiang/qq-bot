@@ -50,8 +50,8 @@ class Minecraft:
                     [
                         "tmux",
                         "new-window",
-                        "-s",
                         "-d",
+                        "-n",
                         "minecraft_{}".format(self.name),
                         "./start.sh",
                         "ENTER",
