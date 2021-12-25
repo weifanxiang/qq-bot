@@ -50,11 +50,12 @@ class Minecraft:
                         "tmux",
                         "new",
                         "-s",
+                        "-d",
                         "minecraft_{self.name}",
                         "./start.sh",
                         "ENTER",
                     ],
-                    cwd=self.path,
+                    cwd=self.path.absolute(),
                 )
             finally:
                 self.lock_file.write_text("running")
