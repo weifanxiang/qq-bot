@@ -49,7 +49,7 @@ class Minecraft:
                 subprocess.run(
                     [
                         "tmux",
-                        "new",
+                        "new-window",
                         "-s",
                         "-d",
                         "minecraft_{}".format(self.name),
