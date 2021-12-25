@@ -79,7 +79,7 @@ class Minecraft:
 
         @property
         def status(self) -> bool:
-            return bool(self.lock_file.exists)
+            return self.lock_file.exists()
 
         class Config:
             start_sh: Path = Path("./start.sh")
