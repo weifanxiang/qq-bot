@@ -96,7 +96,7 @@ class Minecraft:
     servers_dir: Path
     servers: Dict[str, Server] = {}
 
-    def __init__(self, config: dict = {"mc_dir": "/root/minecraft/"}):
+    def __init__(self, config: dict = {"mc_dir": "/opt/minecraft/"}):
         self.servers_dir = Path(config["mc_dir"])
         for i in self.servers_dir.iterdir():
             self.servers.update({i.name: self.Server(name=i.name, path=i)})
