@@ -7,8 +7,11 @@ authors = ["nullptr <wfx.weifanxiang@gmail.com>"]
 [tool.poetry.dependencies]
 python = ">=3.9,<4.0"
 requests = "^2.26.0"
-graia-ariadne = "^0.4.9"
 graia-saya = "^0.0.13"
+graia-ariadne-dev = {extras = ["Alconna"], version = "^2021.12.25"}
+arclet-alconna = "^0.3.3"
+graia-ariadne = "^0.4.9"
+pyyaml = "^6.0"
 
 [tool.poetry.dev-dependencies]
 black = {version = "^21.9b0", allow-prereleases = true}
